@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <title>L'Ornitottero - DIY electronics</title>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+
+    <header>     
+      <div class="header-top"><img id="logo" src='images/background.jpg' ></div>
+      <div class="header-bottom">
+        <p>L'ornitottero (Italian word for ornithopter) is the preursor of airplains and helicopter.<br>It was first designed and created by Leonardo Da Vinci back in 400bc,<br>
+        since then many other brilliant minds have iterate the original Da Vinci design.<br>
+        After so many years, that same desire of creating and innovating has reached us,<br>
+        where I use what the tecnology offers me to give life to new ideas <br> or to build myself more commons everyday utilities (but with my own twist on them).<br>
+        I'm also reselling components or tools that I have no use anymore for, to help the potential next creator of the "Ornitottero".</p>
+      </div>    
+      <div id="header-buttons">
+        <a href="https://en.wikipedia.org/wiki/Ornithopter" id="Ornitottero" class="bar-content">The Ornithopter</a>
+        <a href="" class="bar-spacer"></a>
+        <a href="contact.html" id="linkContact" class="bar-content">CONTACT US</a>
+        <a href="" class="bar-spacer"></a>
+        <a href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci" id="DaVinci" class="bar-content">Da Vinci</a>
+      </div>  
+    </header>
+        
+    <nav>
+      <div id="sidebar">
+        <a href="#filtered" id="bProjects">Completed projects</a>
+        <a href="#filtered" id="bTools">Tools</a>
+        <a href="#filtered" id="bComponents">Components</a>
+        <a href="#filtered" id="bEverything">Display Everything</a>
+        <a href="javascript:void(0)" id="bCollapsSidebar">Close</a>
+      </div>
+      <div id="bOpenSidebar"><a href='javascript:void(0)'><img src="images/button.png"></a></div>
+    </nav>
+
+    <main>
+      <div id="itemList">
+        <a name="filtered"></a>
+      <div class="item projects">
+        <div class="itemPic"><img src="images/controller.jpg"></div>
+      <div class="itemText">
+        <span class="itemName">Arcade cabinet controller</span><br>
+        <span class="itemCat-Price">Projects - 129.99$CAD</span><hr>        
+        <span><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr" >Controller for arcade cabinet videogame. compatible with Windows, Linux, Mac an PS3.<br>
+          It is based on Arduino Mega. It is mod-friendly, so you can repair or tweak everything inside to your likings
+         </div></span>
+          
+      </div>
+      </div>
+
+      <div class="item projects">
+        <div class="itemPic"><img src="images/petfeeder.jpg"></div>
+        <div class="itemText">
+        <span class="itemName">Pet feeder</span><br>
+        <span class="itemCat-Price">Projects - 129.99$CAD</span><hr>  
+        <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+        <div class="itemDescr">Automatic pet feeder. Releases a specific amount (set by the user) of food 3 times per day. The entire body is made out of 3D printed plastic.<br>
+        It is based on Arduino Uno and it can be powered with both battery or by plugging to a power outlet (110V only). Cannot be used with water or other liquids.
+        </div></span>
+      </div>
+      </div>
+
+      <div class="item tools" >
+        <div class="itemPic"><img src="images/Soldering_iron.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">Soldering Iron</span><br>
+          <span class="itemCat-Price">Tools - 15.40$CAD</span><hr>  
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">Basic soldering iron. Ideal for starting projects and everyday use. <br>
+          Comes with metal stand</div></span>
+        </div>
+        </div>
+
+      <div class="item tools" >
+        <div class="itemPic"><img src="images/desoldering_pump.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">Desoldering Pump</span><br>
+          <span class="itemCat-Price">Tools - 5.99$CAD</span><hr>  
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">Basic soldering pump. Easy to dismount for cleaning, ideal for starting projects</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/RFID.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">RFID Reader/Writer</span><br>
+          <span class="itemCat-Price">Components - 7.99$CAD</span><hr>   
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">RFID card reader. Can read and write on any card with chip set on the 13.56Mhz frequency.<br>
+          The operating voltage is 3.3V, SPI and I2C are supported. And it also comes with two rewritable tags</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/1k Resistor.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">1K resistors</span><br>
+          <span class="itemCat-Price">Components - 0.50$CAD</span><hr>    
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">Regular 1K resistors. Selling packs of 5</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/LCD.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">LCD Display</span><br>
+          <span class="itemCat-Price">Components - 1.29$CAD</span><hr>    
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">LCD Display 16x2. Works by receiving data through serial port 9200. Brightness adustable<br>
+            The operating voltage is 3.3V and requires 9 digital pins available on the platform, so be carefull before buying!</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/Ethernet Port.jpg"></div> 
+        <div class="itemText">
+          <span class="itemName">Ethernet port</span><br>
+          <span class="itemCat-Price">Components - 1.59$CAD</span><hr>    
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">Ethernet HR911105A module for Arduino. Very cheap and usefull for any internet-based projects.</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/touchbutton.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">Touch Button</span><br>
+          <span class="itemCat-Price">Components - 0.18$CAD</span><hr>    
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">A basic button touch sensitive. Very usefull on projects where the button must be placed in an uncomfortable spot.<br>
+          I strongly suggest it for projects that involve doors or small box where the button will be used a lot.</div>
+        </div></span>
+        </div>
+
+      <div class="item components" >
+        <div class="itemPic"><img src="images/Button Matrix.jpg"></div>
+        <div class="itemText">
+          <span class="itemName">Matrix of button 4x4</span><br>
+          <span class="itemCat-Price">Components - 0.20$CAD</span><hr>     
+          <span ><a href="javascript:void(0)" class="showButton" onClick="showMore(this)">Show More</a> 
+          <div class="itemDescr">Module of 16 buttons in array. Great replacement for keypads. The usage is easy and straightforward and no external libraries are required</div>
+        </div></span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    <div id="footer">      
+      <div id="form">
+        <form action="https://formspree.io/xaydappn" method="POST">
+          SUBSCRIBE TO OUR NEWSLETTER!<br>
+          <input type="email" id="email" placeholder="email address" name="_subscribed" size="50" required>
+          <input type="submit" value="Subscribe!" title="Subscribe to the newsletter">
+          <p id="formExp">
+          By subscribing, you will be notified via email when a new item comes to the store.<br>
+          You will also receive discounts and promo code when they are available!
+         </p>
+        </form>
+      </div>
+    </div>
+    </footer>
+
+    
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

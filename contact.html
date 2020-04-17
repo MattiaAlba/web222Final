@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contactStyle.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  </head>
+  <body>
+    <header>     
+      <div class="header-top"><img id="logo" src='images/background.jpg' ></div>
+      <div class="header-bottom">
+        <p>L'ornitottero (Italian word for ornithopter) is the preursor of airplains and helicopter.<br>It was first designed and created by Leonardo Da Vinci back in 400bc,<br>
+        since then many other brilliant minds have iterate the original Da Vinci design.<br>
+        After so many years, that same desire of creating and innovating has reached us,<br>
+        where I use what the tecnology offers me to give life to new ideas<br> or to build myself more commons everyday utilities (but with my own twist on them).<br>
+        I'm also reselling components or tools that I have no use anymore for, to help the potential next creator of the "Ornitottero".</p>
+      </div>    
+      
+      <div id="header-buttons">
+        <a href="" class="bar-spacer"></a>
+        <a href="index.html" id="linkContact">Go Back</a>
+        <a href="" class="bar-spacer"></a>
+      </div>  
+    </header>
+
+    <main id="CustomerFormMain">
+      <div id="spacewaster1"></div>
+      <div id="CustomerFormDiv">
+        <form id="custForm" name='userinfos' action='https://httpbin.org/post' method='POST'>
+          <fieldset>
+              <legend><b>CUSTOMER FORM</b></legend>
+              <br>
+              <span class="wrapper"><label for="fname">First Name: </label><br>
+              <input type="text" id="firstname" name="firstname" title="First Name" placeholder="Enter your first name" required>
+              </span>
+              <br>
+              <span class="wrapper"><label for="lname">Last Name: </label><br>
+              <input type="text" id="lastname" name="lastname" title="Last Name" placeholder="Enter your last name" required>
+              </span><br>
+              <span class="wrapper"><label for="phone">Phone number: (dash included) </label><br>
+              +1 <input type="text" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </span>
+              <br>
+              <span class="wrapper"><label for="email">Email: </label><br>
+              <input type="email" id="email" name="email" title="Email address" placeholder="Enter your email address" required>
+            </span><br>
+              <span class="wrapper"><label for="address">Address: </label><br>
+              <input type="text" id="address" name="address" title="Address" placeholder="Enter your address" required>
+            </span><br>
+              <span class="wrapper"><label for="city">City: </label><br>
+              <input list="city" name="city" title="City" placeholder="Enter your city" required>
+              <datalist id="city">
+                <option value="Toronto">
+                <option value="Ottawa">
+                <option value="Vancouver">
+                <option value="Hamiltron">
+                <option value="Mississagua">
+                <option value="Brampton">
+                <option value="Oshawa">
+                <option value="Montreal">
+                <option value="Calgary">
+                <option value="Edmonton">
+                <option value="Halifax">
+              </datalist>
+            </span>
+              <span class="wrapper"><label for="postalcode">Postal Code: (XXXXXX)</label><br>
+              <input type="text" id="postalcode" name="postalcode" title="Postal Code" placeholder="Enter your postal code" pattern="^[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}"required>
+            </span><br>             
+              <span class="wrapper"><label for="bephoned">Would you like to be phoned?</label><br>
+              <input type="radio" id="bephoned" name="bephoned" value="Yes"> Yes<br>
+              <input type="radio" name="bephoned" value="No" checked> No<br>
+            </span>
+              <span class="wrapper"><label for="issue">Issue: </label><br>
+              <input type="radio" id="issue" name="issue" value="question" onclick="hide()" checked> Question<br>
+              <input type="radio" id="issue" name="issue" value="comment" onclick="hide()"> Comment<br>
+              <input type="radio" id="specialissue" name="issue" value="problem" onclick="show()"> Order Problem<br>
+            </span><div id="orderNumDIV">
+              <span class="wrapper"><label for="number">Order Number</label>
+              <input type="text" id="ordernumber" name="ordernumber" min ="0" checked>
+              </div>
+            </span><br>
+              <span class="wrapper"><label for="message">Your message:</label><br>
+              <textarea id="message" rows="4" cols="50"></textarea>
+            </span><br>
+              <input type="hidden" id="studentName" name="studentName" value="Mattia Alba">
+              <br>
+          </fieldset>
+          <br>
+          <input type="submit" name="submit" value="Submit" />
+      </form>
+      </div>
+      <div id="spacewaster2"></div>
+    </main>
+
+    <script type="text/javascript" src="contact.js"></script>
+</body>
+</html>

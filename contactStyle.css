@@ -1,0 +1,129 @@
+/** Add any CSS you need to this file. */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Ubuntu&display=swap');
+
+html{
+    background-color: #e5dfd6;
+    
+    font-family: "Source Sans Pro";
+}
+
+/******************************************HEADER***************************************/
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.header-top{
+    align-self: center;
+}
+
+.header-bottom{
+    font-size: 2vh;
+    text-align: center;
+    display: none;
+}
+
+#header-buttons{
+    text-align:center;
+    border: 0.3em ridge #adaf23;
+    background-color: #a7a762;
+    font-weight: bold;
+
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.bar-spacer{
+    flex: 2
+}
+
+.bar-content{
+    flex:4;
+}
+
+#header-buttons a{
+    color: black;
+    text-decoration: none;
+}
+
+#header-buttons a:link{
+    color: black;
+}
+
+#header-buttons a:visited{
+    color: black;
+}
+
+/********************************************************************************/
+/********************************CONTACT PAGE************************************/
+
+
+
+#orderNumDIV{
+    display: none;
+  }
+
+  #CustomerFormMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+  }
+
+#spacewaster1{
+    display: inline-block;
+    flex:3;
+    order: 1;
+}
+
+#CustomerFormDiv{
+    flex:3;
+    order: 2;
+}
+
+#spacewaster2{
+    display: inline-block;
+    flex:3;
+    order: 3;
+}
+
+
+
+/********************************************************************************/
+/******************************RESPONSIVE DESIGN*********************************/
+
+@media screen and (max-width:900px)
+{
+    .header-top img{
+        width: 40vh;
+        align-self: center;
+    }
+
+    #CustomerFormDiv{
+        box-sizing:border-box
+    }
+
+
+
+    fieldset{
+
+        padding-left: 1vh;
+        padding-right: 5vh;
+
+    }
+
+
+    input[type=text], select, textarea{
+     
+     width: 100%;  
+     padding: 12px;
+    }
+
+}
